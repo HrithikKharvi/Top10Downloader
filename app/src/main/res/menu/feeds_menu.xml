@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/freeApps"
+        android:title="Free Apps" />
+    <item
+        android:id="@+id/paidApps"
+        android:title="Paid Apps" />
+    <item
+        android:id="@+id/songs"
+        android:title="Songs" />
+    <item
+        android:id="@+id/refresh"
+        android:title="Reresh" />
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/top10"
+            android:title="Top 10" />
+        <item
+            android:id="@+id/top25"
+            android:title="Top 25" />
+    </group>
+</menu>
