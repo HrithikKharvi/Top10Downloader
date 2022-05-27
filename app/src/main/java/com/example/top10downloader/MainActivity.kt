@@ -151,49 +151,6 @@ class MainActivity : AppCompatActivity() {
             }
 
             private fun downloadXML(urlPath: String?): String {
-//                var stringBuilder:StringBuilder = StringBuilder()
-//                try {
-//                    var url = URL(urlPath)
-//                    val httpUrlConnection = url.openConnection() as HttpURLConnection
-//                    val responseCode = httpUrlConnection.responseCode
-//                    Log.d(TAG, "${responseCode}")
-////                    var bufferedReader =
-////                        BufferedReader(InputStreamReader(httpUrlConnection.inputStream))
-////
-////                    var buffer = CharArray(500)
-////                    var charCount = 0
-////
-////                    while (charCount >= 0) {
-////                        charCount = bufferedReader.read(buffer)
-////                        if (charCount > 0) {
-////                            stringBuilder.append(String(buffer, 0, charCount))
-////                        }
-////                    }
-////
-////                    bufferedReader.close()
-//
-//                    httpUrlConnection.inputStream.buffered().reader().use({reader ->
-//                        stringBuilder.append(reader.readText())
-//                    })
-//                    return stringBuilder.toString()
-////                }catch(e: MalformedURLException){
-////                    Log.e(TAG,e.message!!)
-////                }catch(e: IOException){
-////                    Log.e(TAG, e.message!!)
-////                }
-////                catch(e:Exception){
-////                    Log.e(TAG, e.message!!)
-////                }
-//                }catch(e :Exception){
-//                    var errorMessage = (when(e){
-//                       is MalformedURLException -> e.message!!
-//                       is IOException ->  e.message!!
-//                       else -> e.message!!
-//                    })
-//                }
-//
-//                return ""
-
                 return URL(urlPath).readText()
             }
         }
